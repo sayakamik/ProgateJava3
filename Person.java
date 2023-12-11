@@ -1,3 +1,6 @@
+// java.lang.Mathを読み込んでください
+import java.lang.Math;
+
 // Personクラスを定義してください
 class Person{
     public static void printData(String name, int age, double height, double weight) {
@@ -7,7 +10,7 @@ class Person{
       System.out.println("体重は" + weight + "kgです");
   
       double bmi = bmi(height, weight);
-      System.out.println("BMIは" + bmi + "です");
+      System.out.println("BMIは" + Math.round(bmi) + "です");
   
       if (isHealthy(bmi)) {
         System.out.println("標準値です");
